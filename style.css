@@ -10,302 +10,675 @@
 }
 /* #endregion */
 
-.myBody {
-    font-family: "Raleway", sans-serif;
-    font-size: 24px;
-    color: #000000;
-    width: 100%;
-    max-width: 1440px;
-    margin: auto;
+    .myBody {
+        font-family: "Raleway", sans-serif;
+        font-size: 24px;
+        color: #000000;
+        width: 100%;
+        max-width: 1920px;
+        min-width: 320px;
+        margin: auto;
 
-}
+    }
+
+    .hide-desktop {
+        display: none;
+    }
 
 /* #region Header Area */
 
-header {
-        
-    width: 100%;
-    height: 112px;
-    position: absolute;
-    top: 0;
-    z-index: 10;
-
-    padding-left: 160px;
-    padding-right: 160px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    .header-logo {
-        width: 64px;
-        height: 64px;
+    .hover-shadow:hover {
+        filter: drop-shadow(0px 0px 10px white);
     }
 
-    .aot-navbar {
+    header {
+
+        width: 100%;
+        height: 112px;
+        padding-left: 160px;
+        padding-right: 160px;
+
+        position: absolute;
+        top: 0;
+        z-index: 10;
+
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            a {
-                color: white;
-                margin-right: 30px;
-            }
-        }   
-        a div{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-            background-color: #9F0908;
-            padding: 10px;
-            
-            border: 2px solid;
-            border-color: white;
-            border-radius: 8px;
 
-            color: white;
-            /* margin-right: 30px; */
-            
-            .phone-logo {
-                margin-right: 10px;
-            }
+        .header-logo {
+            width: 64px;
+            height: 64px;
         }
-        a:hover {
-            color: #D80808;
-            font-weight: bold;
-        }    
-    }
 
-}
+        .aot-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a {
+                    color: white;
+                    margin-right: 30px;
+                }
+            }   
+            a div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                background-color: #9F0908;
+                padding: 10px;
+
+                border: 2px solid;
+                border-color: white;
+                border-radius: 8px;
+
+                color: white;
+
+                .phone-logo {
+                    margin-right: 10px;
+                }
+            }
+            a:hover {
+                color: #D80808;
+
+            }    
+        }
+
+    }
 
 /* #endregion */
 
 /* #region Main Area */
 
-.myMain {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-h2 {
-    font-family: "Raleway", sans-serif;
-    font-size: 80px;
-    font-weight: bold;
-    color: #9F0908;
-    width: 100%;
-    margin-bottom: 64px;
-    text-align: center;
-}
-
-section {
-    margin-top: 120px;
-}
-
-/* #region Section - Head */
-.section-head {
-    background-image: url('./img/1_hero/JPG/hero_bg.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100dvh;
-    top:0;
-    margin-top: 0;
-
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1 {
-        color: white;
-        font-family: "Raleway" , sans-serif;
-        font-weight: bold;
-        font-size: 96px;
-    }
-    span {
-        color: white;
-    }
-}
-/* #endregion */
-
-/* #region Section - How To Order */
-.section-hto {
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    >div {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
+    .myMain {
+        display:flex;
+        flex-direction: column;
         align-items: center;
-
-        >div{
-            width:192px;
-            display: flex;
-            flex-direction: column;
-
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: 128px;
-                height: 128px;
-                margin-bottom: 16px;
-            }
-
-            span {
-                font-family: "Economica", sans-serif;
-                font-weight: bold;
-                font-size: 56px;
-                text-align: center;
-            }
-        }
-    }
-}
-/* #endregion */
-
-/* #region Section - Menu */
-
-.section-menu {
-    width: 100%;
-    height: 1500px;
-
-    background-image: url('./img/3_section_our_menu/JPG/section_our_menu_bg.jpg');
-    
-    h2 {
-        margin-top: 120px;
-        margin-bottom: 64px;
-    }
-
-    h3 {
-        font-family: "Economica", sans-serif;
-        font-size: 56px;
-        font-weight: bold;
-        margin-bottom:16px;
-    }
-
-    table {
-        width: 450px;
-    }
-    tr {
-        display: flex;
         justify-content: space-between;
-        margin-bottom: 8px;
+        width: 100%;
     }
-
-    td {
-        font-family: "Raleway", sans-serif;
-        font-size: 32px;
-        font-weight: bold;
-        color: #675E54;
-    }
-
-    .img-menu {
-        width: 352px;
-        height: 352px;
-    }
-
-    >div {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        
-
-    }
-    .card-tonkatsu {
-        padding-left: 160px;
-        .img-tonkatsu {
-            margin-right: 80px;
-        }
-    }
-
-    .card-miso {
-        padding-right: 160px;
-        justify-content: flex-end;
-        .img-miso {
-            margin-left: 80px;
-        }
-    }
-
-    .card-shio {
-        padding-left: 160px;
-        .img-shio {
-            margin-right: 80px;
-        }
-    }
-}
-
-
-
-
-/* #endregion */
-
-/* #region Section - Contact */
-.section-contact {
-
-    width: 100%;
 
     h2 {
-        margin-bottom: 8px;
+        font-family: "Raleway", sans-serif;
+        font-size: 80px;
+        font-weight: bold;
+        color: #9F0908;
+        width: 100%;
+        margin-bottom: 64px;
+        text-align: center;
     }
-    >div {
+
+    .section-top {
+        margin-top: 120px;
+    }
+
+    /* #region Section - Head */
+    .section-head {
+        background-image: url('./img/1_hero/JPG/hero_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100dvh;
+        
+        top: 0;
+        margin-top: 0;
+
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 64px;
-    }
+            
+        h1 {
+            color: white;
+            font-family: "Raleway", sans-serif;
+            font-weight: bold;
+            font-size: 96px;
+        }
 
-    .googlemaps {
+        span {
+            color: white;
+        }
+    }
+    /* #endregion */
+
+    /* #region Section - How To Order */
+    .section-hto {
         width: 100%;
-        height: 450px;
-        border: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        >div {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            >div{
+                width:192px;
+                display: flex;
+                flex-direction: column;
+
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 128px;
+                    height: 128px;
+                    margin-bottom: 16px;
+                }
+
+                span {
+                    font-family: "Economica", sans-serif;
+                    font-weight: bold;
+                    font-size: 56px;
+                    text-align: center;
+                }
+            }
+        }
     }
-}
+    /* #endregion */
+
+    /* #region Section - Menu */
+
+    .section-menu {
+        width: 100%;
+        height: 1500px;
+
+        background-image: url('./img/3_section_our_menu/JPG/section_our_menu_bg.jpg');
+        background-size: cover;
+        background-position: center;
+        h2 {
+            margin-top: 120px;
+            margin-bottom: 64px;
+        }
+
+        h3 {
+            font-family: "Economica", sans-serif;
+            font-size: 56px;
+            font-weight: bold;
+            margin-bottom:16px;
+        }
+
+        table {
+            width: 80%;
+            /* flex: 1; */
+        }
+        tr {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        td {
+            font-family: "Raleway", sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            color: #675E54;
+        }
+
+        .img-menu {
+            width: 352px;
+            height: 352px;
+        }
+
+        >div {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+
+        }
+        .card-tonkatsu {
+            padding-left: 160px;
+            .img-tonkatsu {
+                margin-right: 80px;
+            }
+        }
+
+        .card-miso {
+            padding-right: 160px;
+            justify-content: flex-end;
+            .img-miso {
+                margin-left: 80px;
+            }
+        }
+
+        .card-shio {
+            padding-left: 160px;
+            .img-shio {
+                margin-right: 80px;
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region Section - Contact */
+    .section-contact {
+
+        width: 100%;
+
+        h2 {
+            margin-bottom: 8px;
+        }
+        >div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 64px;
+        }
+
+        .googlemaps {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+    }
+    /* #endregion */
+
 /* #endregion */
 
-/* #endregion */
+    /* #region Footer */
+    footer {
+        width: 100%;
+        height: 144px;
 
-/* #region Footer */
-footer {
-    width: 100%;
-    height: 144px;
-    margin-top: 8px;
+        background-color: #0A141E;
 
-    background-color: #0A141E;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding-left: 160px;
-    padding-right: 160px;
-
-    img {
-        height: 44px;
-    }
-
-    >div {
-        display:flex;
-        column-gap: 10px;
-        height:40px;
-
-        a { 
-        width: 40px;
-        height: 40px;
+        padding-left: 160px;
+        padding-right: 160px;
 
         img {
-            width: 40px;
-            height: 40px;
+            height: 44px;
+        }
+
+        >div {
+            display:flex;
+            column-gap: 10px;
+            height:40px;
+
+            a { 
+                width: 40px;
+                height: 40px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+    /* #endregion */
+
+
+@media (max-width: 1240px) {
+
+    h2 {
+        font-size: 64px;
+    }
+
+    .section-top {
+        margin-top: 96px;
+    }
+
+    /* #region Header */
+    .hide-element {
+        display: none;
+    }
+
+    header {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    /* #endregion */
+
+    /* #region Head */
+        .section-head {
+            padding-left: 24px; 
+            padding-right: 24px;
+        h1 {
+            font-size: 72px;
+        }
+        span {
+            font-size: 20px;
+        }
+    }
+
+
+    /* #endregion */
+
+    /* #region How to order */
+    .section-hto {
+
+        padding-left: 24px;
+        padding-right: 24px;
+        div { 
+            justify-content: space-between;
+            div {
+                width: 144px;
+                img {
+                    width: 112px;
+                    height: 112px;
+                    margin-bottom: 8px;
+                }
+                span {
+                font-size: 32px;
+                }
+            }
+        }
+
+    }
+    /* #endregion */
+
+    /* #region Menu */
+    .section-menu {
+        padding-left: 24px;
+        padding-right: 24px;
+
+        h2 {
+            margin-bottom: 48px;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+        table {
+            width: 250px;
         }
         
+        td {
+            font-size: 24px;;
+        }
+
+        .card-tonkatsu {
+            padding-left: 16px;
+            .img-tonkatsu {
+                margin-right: 24px;
+            }
+        }
+
+        .card-miso {
+            padding-right: 16px;
+            justify-content: flex-end;
+            .img-miso {
+                margin-left: 24px;
+            }
+        }
+
+        .card-shio {
+            padding-left: 16px;
+            margin-bottom: 96px;
+            .img-shio {
+                margin-right: 24px;
+            }
+        }
+
     }
+    /* #endregion */
+
+    /* #region Find us at */
+    .section-contact {
+        >div {
+            margin-bottom: 48px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+    /* #endregion */
+
+    /* #region footer */
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    /* #endregion */
 }
-/* #endregion */
+
+
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .section-top {
+        margin-top: 72px;
+    }
+
+    /* #region Header */
+    header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .phone-link div span{
+        font-size: 20px;
+    }
+    
+    /* #endregion */
+
+    /* #region Head */
+    .section-head {
+        padding-left: 16px;
+        padding-right: 16px;
+        
+        h1 {
+            font-size: 44px;
+            text-align: center;
+        }
+        span {
+            font-size: 16px;
+        }
+    }
+    /* #endregion */
+
+    /* #region How to order */
+    .section-hto {
+
+        padding-left: 16px;
+        padding-right: 16px;
+        div { 
+            flex-direction: column;
+            justify-content: space-between;
+            
+            div {
+                width: 144px;
+                margin-bottom: 32px;;
+                img {
+                    width: 112px;
+                    height: 112px;
+                    margin-bottom: 8px;
+                }
+                span {
+                font-size: 32px;
+                }
+            }
+        }
+
+    }
+    /* #endregion */
+
+    /* #region Menu */
+    .section-menu {
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+        height: 100%; 
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr {
+            width: 100%;
+        }
+
+        td {
+            font-size: 24px;
+        }
+
+        .card-tonkatsu {
+            flex-direction: column;
+            padding-left: 16px;
+            .img-tonkatsu {
+                margin-right: 0px;
+                margin-bottom: 24px;
+            }
+            div {
+                width: 100%;
+            }
+        }
+
+        .card-miso {
+            flex-direction: column-reverse;
+            padding-right: 16px;
+            .img-miso {
+                margin-left: 0px;
+                margin-bottom: 24px;
+                margin-top: 32px;
+            }
+            div {
+                width: 100%;
+            }
+        }
+
+        .card-shio {
+            flex-direction: column;
+            padding-left: 16px;
+            margin-bottom: 72px;
+            .img-shio {
+                margin-right: 0px;
+                margin-bottom: 24px;
+                margin-top: 32px;
+            }
+            div {
+                width: 100%;
+            }
+        }
+    }
+    /* #endregion */
+
+    /* #region Find us at */
+    .section-contact {
+        >div {
+            margin-bottom: 40px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    /* #endregion */
+
+    /* #region Footer */
+    footer {
+        width: 100%;
+        height: 86px;
+
+        padding-left: 16px;
+        padding-right: 16px;
+
+        img {
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            object-position:left;
+        }
+
+        >div {
+            display:flex;
+            flex: 1;
+            justify-content: end;
+            column-gap: 10px;
+            height:32px;
+
+            a { 
+                width: 32px;
+                height: 32px;
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+    /* #endregion */
 }
+
+
+@media (min-width: 320px) and (max-width: 400px) {
+    
+    h2 {
+        font-size: 32px;
+    }
+
+    .section-top {
+        margin-top: 48px;
+    }
+
+    /* #region Header */
+    header {
+        height: 64px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header-logo {
+        width: 40px;
+        height: 40px;
+    }  
+    
+    .phone-link {
+        padding: 5px;
+        
+        div span{
+            font-size: 20px;
+        }
+    }
+    /* #endregion */
+
+    /* #region Head */
+    /* #endregion  */
+
+    /* #region How to order */
+    /* #endregion */
+
+    /* #region Menu */
+    .section-menu {
+        .img-menu {
+            width: 90%;
+            height: 90%;
+        }
+    }
+    /* #endregion */
+
+    /* #region Find us at */
+    .section-contact {
+        >div {
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    /* #endregion */
+}
+
