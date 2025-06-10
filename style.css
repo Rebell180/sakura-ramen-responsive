@@ -657,6 +657,18 @@
     /* #endregion */
 
     /* #region Head */
+    .section-head {
+        padding-left:8px;
+        padding-left:8px;
+        h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+        span {
+            font-size: 16px;
+        }
+    }
+
     /* #endregion  */
 
     /* #region How to order */
