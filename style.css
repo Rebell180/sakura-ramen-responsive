@@ -34,6 +34,16 @@ h2 {
 
     color: #9f0908;
     text-align: center;
+
+    @media (max-width: 1024px) {
+        font-size: 64px;
+    }
+    @media (max-width: 640px) {
+        font-size: 40px;
+    } 
+    @media (max-width: 375px) {
+        font-size: 32px;
+    }   
 }
 
 h3 {
@@ -49,10 +59,28 @@ h3 {
 
     padding-left: 160px;
     padding-right: 160px;
+
+    @media (max-width: 1240px) {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    @media (max-width: 1024px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
 }
 
 .section-top {
   margin-top: 120px;
+
+  @media(max-width: 1024px) {
+    margin-top: 96px;
+  }
+  @media(max-width: 475px) {
+    margin-top: 72px;
+  }
+
 }
 
 .flex-v {
@@ -67,6 +95,8 @@ h3 {
 .hover-shadow:hover {
   filter: drop-shadow(0px 0px 10px white);
 }
+
+
 
 /* #endregion */
 
@@ -83,9 +113,18 @@ header {
     justify-content: space-between;
     align-items: first-baseline;
 
+    @media (max-width: 420px) {
+      height: 64px;
+    }
+
     .header-logo {
       width: 64px;
       height: 64px;
+
+      @media (max-width: 420px) {
+        width: 40px;
+        height: 40px;
+      }
     }
 
     div {
@@ -119,6 +158,17 @@ header {
         border-radius: 16px;
 
         color: white;
+
+        @media (max-width: 420px) {
+            padding: 10px;
+        }
+
+        span {
+
+          @media (max-width: 420px) {
+            font-size: 16px;
+          }
+        }
       }
     }
   }
@@ -126,7 +176,7 @@ header {
 
 /* #endregion */
 
-/* #region Main */
+  /* #region Main */
 
 /* #region Hero */
 
@@ -151,6 +201,26 @@ header {
       font-family: "Raleway", sans-serif;
       font-size: 96px;
       font-weight: bold;
+
+      @media (max-width: 1024px) {
+        font-size: 72px;
+      }
+      @media (max-width: 640px) {
+        font-size: 44px;
+      }
+      @media (max-width: 420px) {
+        font-size: 32px;
+      }
+    }
+
+    span {
+      @media (max-width: 1024px) {
+        font-size: 20px;
+      }
+      @media (max-width: 640px) {
+        font-size: 16px;
+      }
+
     }
   }
 }
@@ -166,11 +236,21 @@ header {
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
+        @media (max-width: 475px) {
+          flex-direction: column;
+          margin-top: 32px;
+        }
 
         img {
             width: 128px;
             height: 128px;
             padding-bottom: 16px;
+
+            @media (max-width: 1024px) {
+              width: 112px;
+              height: 112px;
+              padding-bottom: 8px;
+            }
         }
 
         span {
@@ -180,6 +260,11 @@ header {
             font-family: "Economica", sans-serif;
             font-size: 56px;
             font-weight: bold;
+
+            @media (max-width: 1024px) {
+                font-size: 32px;
+            }
+
         }
     }
 }
@@ -191,24 +276,61 @@ header {
 .img-menu {
     width: 352px;
     height: 352px;
+
+    @media (max-width: 875px){
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 24px;
+    }
+    @media (max-width: 400px) {
+      width: 90%;
+      height: 90%;
+    }
 }
 
 .card {
     align-items: center;
     column-gap: 80px;
+
+    @media (max-width: 875px){
+      flex-direction: column;
+      column-gap: 0;
+    }
 }
 
 table {
     width: 450px;
+
+    @media (max-width: 1240px){
+      width: 350px;
+    }
+
+    @media (max-width: 875px){
+      width: 100%;
+    }
+
+    @media (max-width: 400px) {
+      width: 90%;
+      height: 90%;
+    }
+
 }
 
 th {
+    width: 100%;
     font-family: "Economica", sans-serif;
     font-size: 56px;
     font-weight: bold;
 
     color: #000000;
     text-align: left;
+
+    @media (max-width: 1240px){
+      font-size: 32px;
+    }
+    @media (max-width: 400px){
+      font-size: 24px;
+    }
 }
 
 td {
@@ -217,6 +339,13 @@ td {
     font-weight: bold;
 
     color: #675E54;
+
+    @media (max-width: 1240px){
+      font-size: 24px;
+    }
+    @media (max-width: 400px){
+      font-size: 16px;
+    }    
 }
 
 .section-menu {
@@ -229,13 +358,37 @@ td {
     h2 {
         padding-top: 120px;
         padding-bottom: 64px;
+        
+        @media (max-width: 640px){
+          padding-top: 96px;
+          padding-bottom: 48px;
+        }
+
+        @media (max-width: 400px){
+          padding-top: 72px;
+          padding-bottom: 40px;
+        }
     }
 
     .card-miso {
         justify-content: flex-end;
-    }
 
+        @media (max-width: 875px){
+          flex-direction: column-reverse;
+          padding-bottom: 32px;
+          padding-top: 32;
+        }
+
+        img {
+            @media (max-width: 640px){
+              margin-top: 32px;
+              margin-bottom: 24px;
+            } 
+        }
+    }
 }
+
+
 
 /* #endregion */
 
@@ -259,11 +412,25 @@ td {
             width: 28px;
             height: 28px;
             margin-right: 10px;
+
+            @media (max-width: 400px){
+              width: 18px;
+              height: 1%;
+              margin-right: 2px;
+            }            
           }
 
           span {
-            color: #000000;
-            padding-top: 8px;
+              color: #000000;
+              padding-top: 8px;
+            
+              @media (max-width: 640px){
+                  font-size: 20px;
+              }
+              @media (max-width: 400px){
+                font-size: 16px;
+                text-align: center;
+              }
           }
         }
     }
@@ -271,7 +438,7 @@ td {
 
 /* #endregion */
 
-/* #endregion */
+  /* #endregion */
 
 /* #region Footer */
 
@@ -286,8 +453,20 @@ footer {
     justify-content: space-between;
     align-items: center;
 
+    @media(max-width: 640px) {
+      height: 86px;
+      align-items:last baseline;
+    }
+
     img {
       height: 44px;;
+      
+      @media(max-width: 640px) {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        object-position: left;
+      }
     }
 
     >div {
@@ -296,7 +475,7 @@ footer {
       a {
         width: 40px;
         height: 40px;
-        
+
         img {
           width: 40px;
           height: 40px;
@@ -306,4 +485,13 @@ footer {
   }
 }
 
+/* #endregion */
+
+/* #region Single Media Queries */
+@media (max-width: 1024px) {
+  
+  .disable-on-mobile{
+    display: none;
+  }
+}
 /* #endregion */
