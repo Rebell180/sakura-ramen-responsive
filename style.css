@@ -1,696 +1,309 @@
-/* #region Deactivate Browser-Dafaults */
+/* #region default globals */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    text-decoration: none;
-    position: relative;
-    
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  position: relative;
 }
+
+body {
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+
+    color: #9f0908;
+    text-align: center;
+}
+
+h3 {
+  font-family: "Economica", sans-serif;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.content {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.section-top {
+  margin-top: 120px;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-h {
+  display: flex;
+}
+
+.hover-shadow:hover {
+  filter: drop-shadow(0px 0px 10px white);
+}
+
 /* #endregion */
 
-    .myBody {
-        font-family: "Raleway", sans-serif;
-        font-size: 24px;
-        color: #000000;
-        width: 100%;
-        max-width: 1920px;
-        min-width: 320px;
-        margin: auto;
+/* #region Header */
+header {
+  width: 100%;
+  height: 112px;
+  padding-top: 20px;
+  position: absolute;
+  z-index: 1;
 
+  div {
+    height: 112px;
+    justify-content: space-between;
+    align-items: first-baseline;
+
+    .header-logo {
+      width: 64px;
+      height: 64px;
     }
 
-    .hide-desktop {
-        display: none;
-    }
+    div {
+      justify-content: space-evenly;
+      align-items: baseline;
+      column-gap: 20px;
 
-/* #region Header Area */
+      nav {
+        column-gap: 20px;
 
-    .hover-shadow:hover {
-        filter: drop-shadow(0px 0px 10px white);
-    }
+        a {
+          color: #eeeeee;
+        }
 
-    header {
+        a:hover {
+          text-decoration: underline;
+        }
+      }
 
-        width: 100%;
-        height: 112px;
-        padding-left: 160px;
-        padding-right: 160px;
+      .phone-link div {
+        height: 44px;
 
-        position: absolute;
-        top: 0;
-        z-index: 10;
-
-        display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .header-logo {
-            width: 64px;
-            height: 64px;
-        }
+        background-color: #9f0908;
+        padding: 20px;
 
-        .aot-navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        border: 4px solid;
+        border-color: white;
+        border-radius: 16px;
 
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                a {
-                    color: white;
-                    margin-right: 30px;
-                }
-            }   
-            a div{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                background-color: #9F0908;
-                padding: 10px;
-
-                border: 2px solid;
-                border-color: white;
-                border-radius: 8px;
-
-                color: white;
-
-                .phone-logo {
-                    margin-right: 10px;
-                }
-            }
-            a:hover {
-                color: #D80808;
-
-            }    
-        }
-
+        color: white;
+      }
     }
+  }
+}
 
 /* #endregion */
 
-/* #region Main Area */
+/* #region Main */
 
-    .myMain {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+/* #region Hero */
+
+.section-hero {
+  background-image: url("./img/1_hero/JPG/hero_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100dvh;
+
+  top: 0;
+  margin-top: 0;
+
+  .content {
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100dvh;
+
+    h1 {
+      font-family: "Raleway", sans-serif;
+      font-size: 96px;
+      font-weight: bold;
     }
+  }
+}
 
-    h2 {
-        font-family: "Raleway", sans-serif;
-        font-size: 80px;
-        font-weight: bold;
-        color: #9F0908;
-        width: 100%;
-        margin-bottom: 64px;
+/* #endregion */
+
+/* #region How to order */
+
+.section-hto .content {
+
+    div {
+        margin-top: 64px;
+        justify-content: space-evenly;
+        align-items: center;
         text-align: center;
-    }
 
-    .section-top {
-        margin-top: 120px;
-    }
-
-    /* #region Section - Head */
-    .section-head {
-        background-image: url('./img/1_hero/JPG/hero_bg.jpg');
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100dvh;
-        
-        top: 0;
-        margin-top: 0;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-            
-        h1 {
-            color: white;
-            font-family: "Raleway", sans-serif;
-            font-weight: bold;
-            font-size: 96px;
+        img {
+            width: 128px;
+            height: 128px;
+            padding-bottom: 16px;
         }
 
         span {
-            color: white;
-        }
-    }
-    /* #endregion */
-
-    /* #region Section - How To Order */
-    .section-hto {
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        >div {
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-
-            >div{
-                width:192px;
-                display: flex;
-                flex-direction: column;
-
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    width: 128px;
-                    height: 128px;
-                    margin-bottom: 16px;
-                }
-
-                span {
-                    font-family: "Economica", sans-serif;
-                    font-weight: bold;
-                    font-size: 56px;
-                    text-align: center;
-                }
-            }
-        }
-    }
-    /* #endregion */
-
-    /* #region Section - Menu */
-
-    .section-menu {
-        width: 100%;
-        height: 1500px;
-
-        background-image: url('./img/3_section_our_menu/JPG/section_our_menu_bg.jpg');
-        background-size: cover;
-        background-position: center;
-        h2 {
-            margin-top: 120px;
-            margin-bottom: 64px;
-        }
-
-        h3 {
+            width: 80%;
+            color: black;
+        
             font-family: "Economica", sans-serif;
             font-size: 56px;
             font-weight: bold;
-            margin-bottom:16px;
-        }
-
-        table {
-            width: 80%;
-            /* flex: 1; */
-        }
-        tr {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-        }
-
-        td {
-            font-family: "Raleway", sans-serif;
-            font-size: 32px;
-            font-weight: bold;
-            color: #675E54;
-        }
-
-        .img-menu {
-            width: 352px;
-            height: 352px;
-        }
-
-        >div {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-
-
-        }
-        .card-tonkatsu {
-            padding-left: 160px;
-            .img-tonkatsu {
-                margin-right: 80px;
-            }
-        }
-
-        .card-miso {
-            padding-right: 160px;
-            justify-content: flex-end;
-            .img-miso {
-                margin-left: 80px;
-            }
-        }
-
-        .card-shio {
-            padding-left: 160px;
-            .img-shio {
-                margin-right: 80px;
-            }
         }
     }
-
-    /* #endregion */
-
-    /* #region Section - Contact */
-    .section-contact {
-        display:flex;
-        flex-direction: column;
-        width: 100%;
-
-        h2 {
-            margin-bottom: 8px;
-        }
-        >div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 64px;
-        }
-
-        .googlemaps {
-            width: 100%;
-            height: 450px;
-            border: 0;
-        }
-    }
-    /* #endregion */
+}
 
 /* #endregion */
 
-    /* #region Footer */
-    footer {
-        width: 100%;
-        height: 144px;
+/* #region Menu */
 
-        background-color: #0A141E;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        padding-left: 160px;
-        padding-right: 160px;
-
-        img {
-            height: 44px;
-        }
-
-        >div {
-            display:flex;
-            column-gap: 10px;
-            height:40px;
-
-            a { 
-                width: 40px;
-                height: 40px;
-                img {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-        }
-    }
-    /* #endregion */
-
-
-@media (max-width: 1240px) {
-
-    h2 {
-        font-size: 64px;
-    }
-
-    .section-top {
-        margin-top: 96px;
-    }
-
-    /* #region Header */
-    .hide-element {
-        display: none;
-    }
-
-    header {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-    /* #endregion */
-
-    /* #region Head */
-        .section-head {
-            padding-left: 24px; 
-            padding-right: 24px;
-        h1 {
-            font-size: 72px;
-        }
-        span {
-            font-size: 20px;
-        }
-    }
-
-
-    /* #endregion */
-
-    /* #region How to order */
-    .section-hto {
-
-        padding-left: 24px;
-        padding-right: 24px;
-        div { 
-            justify-content: space-between;
-            div {
-                width: 144px;
-                img {
-                    width: 112px;
-                    height: 112px;
-                    margin-bottom: 8px;
-                }
-                span {
-                font-size: 32px;
-                }
-            }
-        }
-
-    }
-    /* #endregion */
-
-    /* #region Menu */
-    .section-menu {
-        padding-left: 24px;
-        padding-right: 24px;
-
-        h2 {
-            margin-bottom: 48px;
-        }
-
-        h3 {
-            font-size: 32px;
-        }
-
-        table {
-            width: 250px;
-        }
-        
-        td {
-            font-size: 24px;;
-        }
-
-        .card-tonkatsu {
-            padding-left: 16px;
-            .img-tonkatsu {
-                margin-right: 24px;
-            }
-        }
-
-        .card-miso {
-            padding-right: 16px;
-            justify-content: flex-end;
-            .img-miso {
-                margin-left: 24px;
-            }
-        }
-
-        .card-shio {
-            padding-left: 16px;
-            margin-bottom: 96px;
-            .img-shio {
-                margin-right: 24px;
-            }
-        }
-
-    }
-    /* #endregion */
-
-    /* #region Find us at */
-    .section-contact {
-        >div {
-            margin-bottom: 48px;
-
-            span {
-                font-size: 20px;
-            }
-        }
-    }
-    /* #endregion */
-
-    /* #region footer */
-    footer {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    /* #endregion */
+.img-menu {
+    width: 352px;
+    height: 352px;
 }
 
-
-@media (max-width: 768px) {
-
-    h2 {
-        font-size: 40px;
-    }
-
-    .section-top {
-        margin-top: 72px;
-    }
-
-    /* #region Header */
-    header {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .phone-link div span{
-        font-size: 20px;
-    }
-    
-    /* #endregion */
-
-    /* #region Head */
-    .section-head {
-        padding-left: 16px;
-        padding-right: 16px;
-        
-        h1 {
-            font-size: 44px;
-            text-align: center;
-        }
-        span {
-            font-size: 16px;
-        }
-    }
-    /* #endregion */
-
-    /* #region How to order */
-    .section-hto {
-
-        padding-left: 16px;
-        padding-right: 16px;
-        div { 
-            flex-direction: column;
-            justify-content: space-between;
-            
-            div {
-                width: 144px;
-                margin-bottom: 32px;;
-                img {
-                    width: 112px;
-                    height: 112px;
-                    margin-bottom: 8px;
-                }
-                span {
-                font-size: 32px;
-                }
-            }
-        }
-
-    }
-    /* #endregion */
-
-    /* #region Menu */
-    .section-menu {
-        padding-left: 16px;
-        padding-right: 16px;
-        width: 100%;
-        height: 100%; 
-
-        h2 {
-            margin-bottom: 40px;
-        }
-
-        h3 {
-            font-size: 32px;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        tr {
-            width: 100%;
-        }
-
-        td {
-            font-size: 24px;
-        }
-
-        .card-tonkatsu {
-            flex-direction: column;
-            padding-left: 16px;
-            .img-tonkatsu {
-                margin-right: 0px;
-                margin-bottom: 24px;
-            }
-            div {
-                width: 100%;
-            }
-        }
-
-        .card-miso {
-            flex-direction: column-reverse;
-            padding-right: 16px;
-            .img-miso {
-                margin-left: 0px;
-                margin-bottom: 24px;
-                margin-top: 32px;
-            }
-            div {
-                width: 100%;
-            }
-        }
-
-        .card-shio {
-            flex-direction: column;
-            padding-left: 16px;
-            margin-bottom: 72px;
-            .img-shio {
-                margin-right: 0px;
-                margin-bottom: 24px;
-                margin-top: 32px;
-            }
-            div {
-                width: 100%;
-            }
-        }
-    }
-    /* #endregion */
-
-    /* #region Find us at */
-    .section-contact {
-        >div {
-            margin-bottom: 40px;
-
-            span {
-                font-size: 16px;
-            }
-        }
-    }
-    /* #endregion */
-
-    /* #region Footer */
-    footer {
-        width: 100%;
-        height: 86px;
-
-        padding-left: 16px;
-        padding-right: 16px;
-
-        img {
-            height: 40px;
-            width: 40px;
-            object-fit: cover;
-            object-position:left;
-        }
-
-        >div {
-            display:flex;
-            flex: 1;
-            justify-content: end;
-            column-gap: 10px;
-            height:32px;
-
-            a { 
-                width: 32px;
-                height: 32px;
-                img {
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-        }
-    }
-    /* #endregion */
+.card {
+    align-items: center;
+    column-gap: 80px;
 }
 
+table {
+    width: 450px;
+}
 
-@media (min-width: 320px) and (max-width: 400px) {
-    
+th {
+    font-family: "Economica", sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+
+    color: #000000;
+    text-align: left;
+}
+
+td {
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #675E54;
+}
+
+.section-menu {
+    background-image: url("./img/3_section_our_menu/JPG/section_our_menu_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-bottom: 120px;
+
     h2 {
-        font-size: 32px;
+        padding-top: 120px;
+        padding-bottom: 64px;
     }
 
-    .section-top {
-        margin-top: 48px;
+    .card-miso {
+        justify-content: flex-end;
     }
 
-    /* #region Header */
-    header {
-        height: 64px;
-        padding-top: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+}
+
+/* #endregion */
+
+/* #region Find us at */
+
+.section-contact {
+
+    .content {
+        padding-left: 0px;
+        padding-right: 0px;
+        h2 {
+          padding-bottom: 0;
+          margin-bottom:0;
+        }
+        div {
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 64px;
+
+          img {
+            width: 28px;
+            height: 28px;
+            margin-right: 10px;
+          }
+
+          span {
+            color: #000000;
+            padding-top: 8px;
+          }
+        }
     }
-    .header-logo {
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region Footer */
+
+footer {
+
+  background-color: #000000;
+  width: 100%;
+  height: 144px;
+  .content {
+    width: 100%;
+    height: 144;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 44px;;
+    }
+
+    >div {
+      column-gap: 20px;
+
+      a {
         width: 40px;
         height: 40px;
-    }  
-    
-    .phone-link {
-        padding: 5px;
         
-        div span{
-            font-size: 16px;
+        img {
+          width: 40px;
+          height: 40px;
         }
+      }
     }
-    /* #endregion */
-
-    /* #region Head */
-    .section-head {
-        padding-left:8px;
-        padding-left:8px;
-        h1 {
-            font-size: 36px;
-            text-align: center;
-        }
-        span {
-            font-size: 16px;
-        }
-    }
-
-    /* #endregion  */
-
-    /* #region How to order */
-    /* #endregion */
-
-    /* #region Menu */
-    .section-menu {
-        .img-menu {
-            width: 90%;
-            height: 90%;
-        }
-    }
-    /* #endregion */
-
-    /* #region Find us at */
-    .section-contact {
-        >div {
-            span {
-                font-size: 14px;
-            }
-        }
-    }
-    /* #endregion */
+  }
 }
 
+/* #endregion */
